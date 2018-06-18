@@ -1,0 +1,226 @@
+/* basic for all website */
+body {
+    background-color: #f2f2f2;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+
+}
+
+a:hover {
+    color: red;
+}
+
+.active {
+    color:red;
+}
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+/* navbare */
+nav {
+    background-color: #444;
+    color: #eee;
+    border-bottom: 2px solid red;
+}
+
+nav h3 {
+    float: left;
+    text-transform: capitalize;
+    padding: 0;
+}
+
+nav h3 span {
+    color:red;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    padding-top: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* header */
+header {
+    background-image: url('../img/header.jpg');
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    min-height: 500px;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+
+header p {
+    margin: 0;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+/* contact_email */
+.contact_email {
+    background-color: #243c5a;
+    color: #fff;
+    padding: 20px;
+}
+
+.contact_email h3 {
+    float: left;
+    margin: 0;
+    text-transform: capitalize;
+    color: red;
+}
+
+.contact_email .contact {
+    float: right;
+}
+
+.contact_email .contact input[type='email'] {
+    height: 25px;
+    width: 300px;
+}
+
+.contact_email .contact input[type='submit'] {
+    border:0;
+    margin: 0;
+    height: 30px;
+    width: 100px;
+    background-color: orangered;
+    color:#fff;
+    font-weight: bold;
+    cursor: pointer;
+} 
+
+/* skills */
+.skills {
+    background-color: #ddd;
+    padding: 100px 0;
+}
+
+.skills .box {
+    width: 30%;
+    float:left;
+    padding-left: 2%;
+}
+
+.skills .box img{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.skills .box h3, 
+.skills .box p {
+    text-align: center;
+    line-height: 2;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: yellow;
+    padding: 5px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* about_us */
+.about_us {
+    background-color: #fff;
+}
+
+.about_us .about_box {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.about_us .about_box h3 {
+    color: red;
+    text-transform: capitalize;
+    padding-top: 30px;
+}
+.about_us .about_box p {
+    padding: 20px;
+    text-align: justify;
+}
+/* services */
+.services {
+    padding: 50px 0;
+    width: 50%;
+    margin: auto;
+}
+.services section h3 {
+    color: red;
+    text-align: center;
+}
+.services section p {
+    text-align: justify;
+}
+@media ( min-width:570) and (max-width: 700px) {
+     nav h3 
+    ,nav ul
+    ,.contact_email h3,
+    .contact_email .contact
+    ,.skills .box ,
+    .about_us .about_box
+     {
+        margin: 0;
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    } 
+  
+
+}
+
+@media ( max-width:569px) {
+    nav h3 
+   ,nav ul
+   ,.contact_email h3,
+   .contact_email .contact
+   ,.skills .box ,
+   .about_us .about_box
+    {
+       margin: 0;
+       float: none;
+       width: 100%;
+       text-align: center;
+       padding: 10px 0;
+   } 
+   
+   .contact_email .contact input[type='submit'] {
+       margin-top: 20px;
+   }
+
+}
